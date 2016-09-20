@@ -18,12 +18,12 @@ int main(int argc, char* argv[])
 	checkErr(platformList.size()!=0 ? CL_SUCCESS : -1, "cl::Platform::get");
 	std::cerr << "Platform number is: " << platformList.size() << std::endl;
 	std::string platformVendor;
-	for(int i = 0; i < platformList.size(); ++i)
+	for(unsigned i = 0; i < platformList.size(); ++i)
 	{
 		platformList[i].getInfo((cl_platform_info)CL_PLATFORM_VENDOR, &platformVendor);
 		std::cerr << "Platform is by: " << platformVendor << std::endl;
 	}
-	//cl_context_properties cprops[3] = {CL_CONTEXT_PLATFORM, (cl_context_properties)(platformList[0])(), 0};cl::Context context(CL_DEVICE_TYPE_CPU, cprops, NULL, NULL, &err);
+	cl_context_properties cprops[3] = {CL_CONTEXT_PLATFORM, (cl_context_properties)(platformList[0])(), 0};cl::Context context(CL_DEVICE_TYPE_CPU, cprops, NULL, NULL, &err);
 	checkErr(err, "Context::Context()"); 
 	return 0;
 }
