@@ -17,6 +17,7 @@ addons:
     - libopenmpi-dev
     - opencl-headers
     - fglrx-core
+    - beignet
     sources:
     - ubuntu-toolchain-r-test
     - ubuntu-sdk-team
