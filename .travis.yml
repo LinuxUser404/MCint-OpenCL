@@ -15,7 +15,7 @@ addons:
     - g++-4.8
     - gcc-4.8
     - libopenmpi-dev
-    - libopencl
+    - opencl-headers
     sources:
     - ubuntu-toolchain-r-test
     - ubuntu-sdk-team
