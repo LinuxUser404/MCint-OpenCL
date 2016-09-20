@@ -16,7 +16,7 @@ addons:
     - gcc-4.8
     - libopenmpi-dev
     - opencl-headers
-    - opencl-1.2-intel-devel
+    - nvidia-352-dev
     sources:
     - ubuntu-toolchain-r-test
     - ubuntu-sdk-team
