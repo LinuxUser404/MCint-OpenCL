@@ -16,8 +16,7 @@ addons:
     - gcc-4.8
     - libopenmpi-dev
     - opencl-headers
-    - fglrx
-    - opencl-icd
+    - fglrx-core
     sources:
     - ubuntu-toolchain-r-test
     - ubuntu-sdk-team
