@@ -17,7 +17,7 @@ addons:
     - libopenmpi-dev
     - opencl-headers
     - fglrx
-    - amd-libopencl1
+    - amd-opencl-icd
     sources:
     - ubuntu-toolchain-r-test
     - ubuntu-sdk-team
