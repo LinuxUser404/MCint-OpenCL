@@ -7,7 +7,6 @@ before_script:
     - g++ --version
 script:
     - make clean
-    - make
     - make test
 
 addons:
