@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
 	std::vector< cl::Platform > platformList;
 	cl::Platform::get(&platformList);
 	checkErr(platformList.size()!=0 ? CL_SUCCESS : -1, "cl::Platform::get");
-	std::cerr << "Platform number is: " << platformList.size() << std::endl;
+	std::cerr << "Platform number is: " << platformList.size() << std::endl << std::flush;
 	std::string platformVendor;
 	for(unsigned i = 0; i < platformList.size(); ++i)
 	{
